@@ -1,0 +1,60 @@
+<svg viewBox="0 0 500 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff"/>
+      <stop offset="100%" stop-color="#00d4aa"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="250" cy="210" r="190" fill="#f7f8fc"/>
+  <circle cx="250" cy="210" r="190" fill="none" stroke="#e5e7eb" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Orbit rings -->
+  <ellipse cx="250" cy="210" rx="150" ry="60" fill="none" stroke="#6c63ff" stroke-width="1.5" opacity="0.25"/>
+  <ellipse cx="250" cy="210" rx="100" ry="140" fill="none" stroke="#00d4aa" stroke-width="1.5" opacity="0.25"/>
+
+  <!-- Rocket body -->
+  <g transform="translate(250,210) rotate(-35)">
+    <path d="M0,-90 C24,-60 24,10 0,40 C-24,10 -24,-60 0,-90 Z" fill="url(#rg1)"/>
+    <circle cx="0" cy="-30" r="14" fill="#ffffff" opacity="0.9"/>
+    <circle cx="0" cy="-30" r="8" fill="#1a1a2e" opacity="0.4"/>
+    <!-- Fins -->
+    <path d="M-10,20 L-34,46 L-6,38 Z" fill="#1a1a2e"/>
+    <path d="M10,20 L34,46 L6,38 Z" fill="#1a1a2e"/>
+    <!-- Flame -->
+    <path d="M-10,40 Q0,75 10,40 Q5,55 0,55 Q-5,55 -10,40 Z" fill="#f59e0b"/>
+  </g>
+
+  <!-- Stars/sparkles -->
+  <g fill="#6c63ff">
+    <circle cx="110" cy="90" r="3"/>
+    <circle cx="390" cy="120" r="4"/>
+    <circle cx="400" cy="300" r="3"/>
+    <circle cx="100" cy="320" r="3.5"/>
+  </g>
+  <g fill="#00d4aa">
+    <circle cx="150" cy="60" r="2.5"/>
+    <circle cx="420" cy="200" r="3"/>
+    <circle cx="80" cy="220" r="2.5"/>
+    <circle cx="340" cy="350" r="3"/>
+  </g>
+
+  <!-- Floating service icons -->
+  <g transform="translate(60,150)">
+    <circle r="28" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+    <text x="0" y="8" font-size="22" text-anchor="middle">🔍</text>
+  </g>
+  <g transform="translate(430,160)">
+    <circle r="28" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+    <text x="0" y="8" font-size="22" text-anchor="middle">📈</text>
+  </g>
+  <g transform="translate(80,330)">
+    <circle r="26" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+    <text x="0" y="7" font-size="20" text-anchor="middle">💬</text>
+  </g>
+  <g transform="translate(420,330)">
+    <circle r="26" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+    <text x="0" y="7" font-size="20" text-anchor="middle">🎯</text>
+  </g>
+</svg>
